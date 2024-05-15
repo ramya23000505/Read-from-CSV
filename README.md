@@ -1,16 +1,39 @@
 # Read-from-CSV
-
+## Date:
 ## AIM:
-
+    To write a python program for reading the csv file content
 ## ALGORITHM:
 ### Step 1:
+Load the CSV into a DataFrame
 ### Step 2:
+Print the number of contents to be displayed using df.head().
 ### Step 3:
+he number of rows returned is defined in Pandas option settings.
 ### Step 4:
+Check your system's maximum column with the pd.options.display.max_column statement.
 ### Step 5:
+Increase the maximum number of rows to display the entire DataFrame.
 
 ## PROGRAM:
+```
+To write a python program for reading content from a CSV file.
+Developed by: RAMYA R
+Register Number: 212223230169
 
+import pandas as pd
+df = pd.read_csv('nba.csv')
+print(df.head(10))
+print(df.tail())
+print("Number of rows:",len(df.axes[0]))
+print("Number of columns:",len(df.axes[1]))
+```
 ## OUTPUT:
-
+![alt text](<Screenshot 2024-05-15 184805.png>)
+## HEAD
+![alt text](head.png)
+## TAIL
+![alt text](tail.png)
+## NO OF ROWS AND COLUMNS
+![alt text](row_col.png)
 ## RESULT:
+Thus, the program is written to read the csv file.
